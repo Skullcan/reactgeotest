@@ -1,4 +1,6 @@
 rootProject.name = 'reactgeotest'
+include ':@hariks789_react-native-background-geolocation-common'
+project(':@hariks789_react-native-background-geolocation-common').projectDir = new File(rootProject.projectDir, '../node_modules/@hariks789/react-native-background-geolocation/android/common')
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 include ':app'
 includeBuild('../node_modules/react-native-gradle-plugin')
